@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display==swap" rel="stylesheet">
+
+        <style>
+            .wrap {
+    width: 700px;
+       margin: auto;
+    text-align: center;
+        font-family: Open Sans;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+.line {
+    border: 2px solid black;
+}
+
+.slideshow-container {
+    margin-top: 20px;
+    position: relative;
+    padding: 30px;
+        height: 300px;
+        border: 2px solid black;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+ top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 12px;
+  color: black;  
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color:black;
+  color: white;
+}
+
+.daytext {
+  color:black;  
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+select optgroup {
+    margin-left: 25px;
+    background-color: black;
+    color: white;
+}
+select option {
+    margin-left: 60px;
+    padding: 10px;
+    
+
+}
+
+.italic {
+    font-style: italic;
+    font-size: 12px;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+}
+
+#back {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    border: 0;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+#nextpage {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    top: 90%;
+    right: 40%;
+    border: 0;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nextpage:hover, #back:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  </style>
+
+    </head>
+<body>
+    <div class="wrap">
+        <h1>Select Meal Plan</h1>
+        <p class="italic">For ______ Persons / _______ Meals </p>
+        <h3>March: Week 23rd to 28th</h3>
+        
+
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="daytext">Monday</div>
+            <p class="italic">Time Slot: ___________</p>
+                <select name="meal" id="m">
+                    <optgroup label="Breakfast" class="grp"></optgroup>
+                        <option value="">Poha</option>
+                        <option value="">Masala Dosa + Coconut Chutney</option>
+                        <option value="">Spinach Corn Sandwich</option>
+                    <optgroup label="Lunch/Dinner" class="grp"></optgroup>
+                        <option value="">Phulka + Matar Paneer + Beetroot Salad</option>
+                        <option value="">Plain Rice + Drumstick Sambar + Clusterbeans Fry</option>
+                        <option value="">Veg Noodles + Tomato Soup</option>
+                </select>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="daytext">Tuesday</div>
+            <p class="italic">Time Slot: ___________</p>
+                <select name="meal" id="m">
+                    <optgroup label="Breakfast" class="grp"></optgroup>
+                        <option value="">Poha</option>
+                        <option value="">Masala Dosa + Coconut Chutney</option>
+                        <option value="">Spinach Corn Sandwich</option>
+                    <optgroup label="Lunch/Dinner" class="grp"></optgroup>
+                        <option value="">Phulka + Matar Paneer + Beetroot Salad</option>
+                        <option value="">Plain Rice + Drumstick Sambar + Clusterbeans Fry</option>
+                        <option value="">Veg Noodles + Tomato Soup</option>
+                </select>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="daytext">Wednesday</div>
+            <p class="italic">Time Slot: ___________</p>
+                <select name="meal" id="m">
+                    <optgroup label="Breakfast" class="grp"></optgroup>
+                        <option value="">Poha</option>
+                        <option value="">Masala Dosa + Coconut Chutney</option>
+                        <option value="">Spinach Corn Sandwich</option>
+                    <optgroup label="Lunch/Dinner" class="grp"></optgroup>
+                        <option value="">Phulka + Matar Paneer + Beetroot Salad</option>
+                        <option value="">Plain Rice + Drumstick Sambar + Clusterbeans Fry</option>
+                        <option value="">Veg Noodles + Tomato Soup</option>
+                </select>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="daytext">Thursday</div>
+            <p class="italic">Time Slot: ___________</p>
+                <select name="meal" id="m">
+                    <optgroup label="Breakfast" class="grp"></optgroup>
+                        <option value="">Poha</option>
+                        <option value="">Masala Dosa + Coconut Chutney</option>
+                        <option value="">Spinach Corn Sandwich</option>
+                    <optgroup label="Lunch/Dinner" class="grp"></optgroup>
+                        <option value="">Phulka + Matar Paneer + Beetroot Salad</option>
+                        <option value="">Plain Rice + Drumstick Sambar + Clusterbeans Fry</option>
+                        <option value="">Veg Noodles + Tomato Soup</option>
+                </select>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="daytext">Friday</div>
+            <p class="italic">Time Slot: ___________</p>
+                <select name="meal" id="m">
+                    <optgroup label="Breakfast" class="grp"></optgroup>
+                        <option value="">Poha</option>
+                        <option value="">Masala Dosa + Coconut Chutney</option>
+                        <option value="">Spinach Corn Sandwich</option>
+                    <optgroup label="Lunch/Dinner" class="grp"></optgroup>
+                        <option value="">Phulka + Matar Paneer + Beetroot Salad</option>
+                        <option value="">Plain Rice + Drumstick Sambar + Clusterbeans Fry</option>
+                        <option value="">Veg Noodles + Tomato Soup</option>
+                </select>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="daytext">Saturday</div>
+            <p class="italic">Time Slot: ___________</p>
+                <select name="meal" id="m">
+                    <optgroup label="Breakfast" class="grp"></optgroup>
+                        <option value="">Poha</option>
+                        <option value="">Masala Dosa + Coconut Chutney</option>
+                        <option value="">Spinach Corn Sandwich</option>
+                    <optgroup label="Lunch/Dinner" class="grp"></optgroup>
+                        <option value="">Phulka + Matar Paneer + Beetroot Salad</option>
+                        <option value="">Plain Rice + Drumstick Sambar + Clusterbeans Fry</option>
+                        <option value="">Veg Noodles + Tomato Soup</option>
+                </select>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+  
+  <a href="mealplanfirst.html" id="back" >Back</a>
+  <a href="" id="nextpage" >Next</a>
+
+
+</div>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }  
+  slides[slideIndex-1].style.display = "block";
+  
+}
+</script>
+        
+    </div>
+</body>
+</html>
